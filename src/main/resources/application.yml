@@ -1,0 +1,15 @@
+spring:
+  ai:
+    openai:
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      api-key: sk-80e4e6e0b5f747f5af996c811d6c6a58
+      chat:
+        options:
+          model: qwen-plus
+          temperature: 0.7
+
+
+logging:
+  level:
+    org.springframework.web.client.RestClient: DEBUG
+    org.springframework.ai: DEBUG
