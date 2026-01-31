@@ -1,0 +1,5 @@
+server:
+  port: 8081
+
+dashscope:
+  api-key: sk-80e4e6e0b5f747f5af996c811d6c6a58
