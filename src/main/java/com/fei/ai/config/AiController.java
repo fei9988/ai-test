@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/ai")
+@RequestMapping("/ai_1")
 public class AiController {
 
     private final ChatClient chatClient;

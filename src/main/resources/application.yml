@@ -13,3 +13,10 @@ logging:
   level:
     org.springframework.web.client.RestClient: DEBUG
     org.springframework.ai: DEBUG
+
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+      force: true
+      enabled: true
