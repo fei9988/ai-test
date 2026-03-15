@@ -7,8 +7,61 @@ spring:
         options:
           model: qwen-plus
           temperature: 0.7
+      embedding:
+        options:
+          model: text-embedding-v4
+#    vectorstore:
+#      milvus:
+#        client:
+#          host: "localhost"
+#          port: 19530
+#          username: "root"
+#          password: "milvus"
+#        databaseName: "default"
+#        collectionName: "vector_store1"
+#        initialize-schema: true
+#        embeddingDimension: 1024
+#        indexType: IVF_FLAT
+#        metricType: COSINE
+
+#spring:
+#  ai:
+#    openai:
+#      base-url: https://ark-cn-beijing.bytedance.net/api/v3
+#      api-key: d91db9bf-169a-4de8-a3cd-8f23c017018d
+#      chat:
+#        options:
+#          model: ep-20260225121255-9bn2l
+#          temperature: 0.7
 
 
+#spring:
+#  ai:
+#    openai:
+#      base-url: https://api.kxaug.xyz/
+#      api-key: sk-BcSlK5LUOuzMJjiKwDI4catb16MlRa5at3mwAbEopSEHf0iI
+#      chat:
+#        options:
+#          model: gpt-5.2
+#          temperature: 0.7
+#    embedding:
+#      base-url: https://dashscope.aliyuncs.com/compatible-mode
+#      api-key: sk-80e4e6e0b5f747f5af996c811d6c6a58
+#      options:
+#        model: text-embedding-v4
+#    vectorstore:
+#      milvus:
+#        client:
+#          host: "localhost"
+#          port: 19530
+#          username: "root"
+#          password: "milvus"
+#        databaseName: "default"
+#        collectionName: "vector_store_gpt"
+#        initialize-schema: true
+#        embeddingDimension: 1024
+#        indexType: IVF_FLAT
+#        metricType: COSINE
 logging:
   level:
     org.springframework.web.client.RestClient: DEBUG
@@ -20,3 +73,4 @@ server:
       charset: UTF-8
       force: true
       enabled: true
+

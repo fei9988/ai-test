@@ -63,6 +63,18 @@
             <artifactId>spring-ai-starter-model-openai</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.volcengine</groupId>
+            <artifactId>volcengine-java-sdk-ark-runtime</artifactId>
+            <version>LATEST</version>
+        </dependency>
+
+
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.ai</groupId>-->
+<!--            <artifactId>spring-ai-starter-vector-store-milvus</artifactId>-->
+<!--        </dependency>-->
+
     </dependencies>
 
     <build>

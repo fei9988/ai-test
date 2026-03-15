@@ -2,7 +2,6 @@ package com.fei.ai.controller;
 
 
 import jakarta.annotation.Resource;
-
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
 
 @RestController
-@RequestMapping("/ai")
+@RequestMapping("/api")
 public class ChatController {
 
     @Resource
@@ -30,8 +29,5 @@ public class ChatController {
                 .user(message)
                 .stream().content();
     }
-
-
-
 
 }
