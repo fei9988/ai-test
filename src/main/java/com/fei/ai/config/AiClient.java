@@ -27,11 +27,10 @@ public class AiClient {
         // 设置 utf-8 编码
         return ChatClient.builder(openAiChatModel)
                 .defaultSystem("你叫小段段，你是一个专业的聊天机器人，称呼我为主人")
-                .defaultAdvisors(new SimpleLoggerAdvisor(), MessageChatMemoryAdvisor.builder(chatMemory).build())
+                .defaultAdvisors(new SimpleLoggerAdvisor(),
+                        MessageChatMemoryAdvisor.builder(chatMemory).build())
                 .build();
     }
-
-
 
 
 }
